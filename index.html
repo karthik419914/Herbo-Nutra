@@ -3,130 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bio-gen Extracts — Scientifically Backed Nutraceutical Ingredients</title>
-  <meta name="description" content="Bio-gen Extracts is a value-driven manufacturer of nutraceutical ingredients backed with science, traceability and sustainability since 2000.">
-  <meta property="og:title" content="Bio-gen Extracts — Choose Good Health™">
-  <meta property="og:description" content="Discover scientifically backed ingredients powered by nature & technology.">
+  <title>Herbo Nutra Ingredients — High Purity Nutraceutical Raw Materials</title>
+  <meta name="description" content="Herbo Nutra Ingredients is a scientifically-driven manufacturer of high-purity nutraceutical raw materials and intermediates since 2000.">
+  <meta property="og:title" content="Herbo Nutra Ingredients — Manufacture Smart™">
+  <meta property="og:description" content="Discover premium manufacturer-direct raw materials engineered for cost-effective manufacturing.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@Lovable">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .font-display { font-family: 'Fraunces', serif; }
-    body { font-family: 'Inter', sans-serif; }
-  </style>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
 </head>
-<body class="min-h-screen bg-white text-gray-900">
+<body>
   <!-- Header -->
-  <header class="sticky top-0 z-40 w-full border-b border-gray-200 bg-white/80 backdrop-blur-xl">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-      <a href="/" class="flex items-center gap-3">
-        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-900">
-          <span class="font-display text-lg font-bold text-white">B</span>
-        </div>
-        <div class="leading-tight">
-          <div class="font-display text-xl font-semibold tracking-tight">Bio-gen</div>
-          <div class="text-[10px] uppercase tracking-[0.2em] text-gray-500">Extracts</div>
-        </div>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/" class="logo-link">
+        <img src="assets/logo.png" alt="Herbo Nutra Logo" class="logo-image">
+        <div class="logo-text">Herbo Nutra Ingredients</div>
       </a>
-      <nav class="hidden items-center gap-10 md:flex">
-        <a href="/company" class="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900">Company</a>
-        <a href="/products" class="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900">Products</a>
-        <a href="/media" class="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900">Media</a>
-      </nav>
-      <a href="/contact" class="inline-flex items-center justify-center rounded-full bg-gray-900 px-5 py-2.5 text-sm font-medium text-white transition-transform hover:scale-105">Contact Us</a>
+      <a href="/contact" class="btn btn-primary">Contact Us</a>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="relative overflow-hidden">
-    <div class="mx-auto grid max-w-7xl gap-12 px-6 pt-20 pb-24 lg:grid-cols-12 lg:gap-16 lg:px-10 lg:pt-28 lg:pb-32">
-      <div class="lg:col-span-7">
-        <div class="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-4 py-1.5 text-xs uppercase tracking-[0.18em] text-gray-500">
-          <span class="h-1.5 w-1.5 rounded-full bg-green-500"></span>
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="badge">
+          <span class="badge-dot"></span>
           25 years of Choose Good Health™
         </div>
-        <h1 class="mt-8 font-display text-5xl leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-          Discover scientifically backed <span class="italic text-green-600">ingredients</span> powered by nature & technology.
+        <h1 class="hero-title">
+          Your trusted source for <span class="text-highlight">premium raw materials</span>. High-quality raw materials engineered for cost-effective manufacturing.
         </h1>
-        <p class="mt-8 max-w-xl text-lg leading-relaxed text-gray-600">
-          Bio-gen Extracts has been a value-driven manufacturer of nutraceutical ingredients since 2000 — with innovation at the core of every step in the value chain.
+        <p class="hero-desc">
+          Herbo Nutra is a value-driven manufacturer of nutraceutical ingredients since 2000 — with innovation at the core of every step in the value chain.
         </p>
-        <div class="mt-10 flex flex-wrap gap-4">
-          <a href="/company" class="inline-flex items-center justify-center rounded-full bg-gray-900 px-7 py-3.5 text-sm font-medium text-white transition-transform hover:scale-105">Learn More</a>
-          <a href="/products" class="inline-flex items-center justify-center rounded-full border border-gray-200 bg-white px-7 py-3.5 text-sm font-medium hover:bg-gray-50">Our ingredients →</a>
+        <div class="hero-actions">
+          <a href="/company" class="btn btn-primary btn-large">Learn More</a>
+          <a href="/products" class="btn btn-secondary">Our ingredients →</a>
         </div>
       </div>
-      <div class="lg:col-span-5">
-        <div class="relative aspect-[4/5] overflow-hidden rounded-[2rem]">
-          <img src="./assets/hero-greenhouse.jpg" alt="Cultivation in a controlled greenhouse environment" class="h-full w-full object-cover" width="1600" height="1024">
-          <div class="absolute inset-x-6 bottom-6 rounded-2xl bg-white/95 p-5 backdrop-blur">
-            <div class="text-xs uppercase tracking-[0.2em] text-gray-500">Bengaluru, INDIA</div>
-            <div class="mt-1 font-display text-base">EU-GMP & US-FDA compliant manufacturing</div>
+      <div class="hero-visual">
+        <div class="hero-image-card">
+          <img src="./assets/hero-greenhouse.jpg" alt="Cultivation in a controlled greenhouse environment" class="hero-image" width="1600" height="1024">
+          <div class="hero-image-overlay">
+            <div class="overlay-location">Bengaluru, INDIA</div>
+            <div class="overlay-desc">EU-GMP & US-FDA compliant manufacturing</div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Stats -->
-    <div class="border-y border-gray-200 bg-gray-50/40">
-      <div class="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-gray-200 md:grid-cols-4">
-        <div class="bg-white px-6 py-8 text-center">
-          <div class="font-display text-4xl tracking-tight md:text-5xl">500+</div>
-          <div class="mt-2 text-xs uppercase tracking-[0.18em] text-gray-500">Customers</div>
+    <div class="stats-section">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value font-display" data-target="14">0+</div>
+          <div class="stat-label">Ingredients</div>
         </div>
-        <div class="bg-white px-6 py-8 text-center">
-          <div class="font-display text-4xl tracking-tight md:text-5xl">15+</div>
-          <div class="mt-2 text-xs uppercase tracking-[0.18em] text-gray-500">Publications</div>
-        </div>
-        <div class="bg-white px-6 py-8 text-center">
-          <div class="font-display text-4xl tracking-tight md:text-5xl">45+</div>
-          <div class="mt-2 text-xs uppercase tracking-[0.18em] text-gray-500">Countries</div>
-        </div>
-        <div class="bg-white px-6 py-8 text-center">
-          <div class="font-display text-4xl tracking-tight md:text-5xl">6+</div>
-          <div class="mt-2 text-xs uppercase tracking-[0.18em] text-gray-500">Researched ingredients</div>
+        <div class="stat-card">
+          <div class="stat-value font-display" data-target="10">0+</div>
+          <div class="stat-label">Years in Industry</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section class="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
-    <div class="grid gap-12 lg:grid-cols-12 lg:gap-20">
-      <div class="lg:col-span-5">
-        <div class="text-xs uppercase tracking-[0.2em] text-green-600">About Bio-gen</div>
-        <h2 class="mt-4 font-display text-4xl leading-tight tracking-tight md:text-5xl">
-          Innovate. Elevate. <em>Choose Good Health™</em>.
+  <section class="about-section">
+    <div class="about-grid">
+      <div class="about-header-column">
+        <div class="about-tagline">About Herbo Nutra</div>
+        <h2 class="about-title">
+          <span class="line-1">Advance. Formulate.</span><br>
+          <span class="line-2 italic text-highlight">Manufacture Smart</span><br>
+          <span class="line-3">with Herbo Nutra Ingredients</span>
         </h2>
       </div>
-      <div class="lg:col-span-7">
-        <p class="text-lg leading-relaxed text-gray-600">
-          Enabling opportunities for holistic health drives us so that every individual can <em class="font-display">Choose Good Health™</em>. Bio-gen Extracts harnesses the power of innovation across the value chain — from seed to shelf — backed by science, traceability and sustainability.
+      <div class="about-body-column">
+        <p class="about-lead-text">
+          Herbo Nutra Ingredients is a scientifically-driven manufacturer of high-purity nutraceutical raw materials and intermediates. With cost-efficiency and quality at our core across the value chain, discover premium, manufacturer-direct active ingredients from us—backed by rigorous science, strict purity standards, and budget-friendly pricing so that you can always Manufacture Smart for your consumers.
         </p>
-        <div class="mt-10 grid gap-px overflow-hidden rounded-3xl border border-gray-200 bg-gray-200 md:grid-cols-2">
-          <div class="bg-white p-7">
-            <div class="font-display text-3xl text-gray-400">01</div>
-            <h3 class="mt-4 font-display text-xl">Evidence-Based Claims</h3>
-            <p class="mt-3 text-sm leading-relaxed text-gray-600">Clinical studies vetted by third-party organizations to meet global FDA requirements — establishing safety and efficacy beyond traditional knowledge.</p>
+        
+        <h3 class="about-subtitle">Why Formulators Choose Us</h3>
+        
+        <div class="about-features-grid">
+          <div class="about-feature-card">
+            <div class="feature-number">01</div>
+            <h3 class="feature-title">Manufacturer-Direct Value</h3>
+            <p class="feature-desc">By eliminating supply chain layers, we pass the savings directly to you, protecting your bottom line.</p>
           </div>
-          <div class="bg-white p-7">
-            <div class="font-display text-3xl text-gray-400">02</div>
-            <h3 class="mt-4 font-display text-xl">Traceability & Transparency</h3>
-            <p class="mt-3 text-sm leading-relaxed text-gray-600">Complete supply-chain traceability from start to finish. Every ingredient is ethically sourced and sustainably produced.</p>
+          <div class="about-feature-card">
+            <div class="feature-number">02</div>
+            <h3 class="feature-title">The Foundation of Excellence</h3>
+            <p class="feature-desc">We supply the essential, bio-enhanced raw materials that drive the creation of final tablets, chemicals, and drugs.</p>
           </div>
-          <div class="bg-white p-7">
-            <div class="font-display text-3xl text-gray-400">03</div>
-            <h3 class="mt-4 font-display text-xl">Manufacturing Excellence</h3>
-            <p class="mt-3 text-sm leading-relaxed text-gray-600">State-of-the-art facility following 'Quality by Design' — compliant with global regulatory requirements, every time.</p>
+          <div class="about-feature-card">
+            <div class="feature-number">03</div>
+            <h3 class="feature-title">Uncompromising Quality</h3>
+            <p class="feature-desc">Every batch is scientifically processed to ensure absolute consistency and clean-label reliability.</p>
           </div>
-          <div class="bg-white p-7">
-            <div class="font-display text-3xl text-gray-400">04</div>
-            <h3 class="mt-4 font-display text-xl">Technological Innovation</h3>
-            <p class="mt-3 text-sm leading-relaxed text-gray-600">We understand global consumer trends and adapt our technologies — performing the work up-front in our application lab.</p>
+          <div class="about-feature-card">
+            <div class="feature-number">04</div>
+            <h3 class="feature-title">Traceability & Transparency</h3>
+            <p class="feature-desc">Complete supply-chain traceability from start to finish. Every ingredient is ethically sourced and sustainably produced.</p>
           </div>
         </div>
       </div>
@@ -134,33 +118,33 @@
   </section>
 
   <!-- Ingredients -->
-  <section class="bg-gray-50/50 py-24 lg:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-10">
-      <div class="flex flex-wrap items-end justify-between gap-6">
-        <h2 class="max-w-2xl font-display text-4xl leading-tight tracking-tight md:text-5xl">
-          A suite of <em>science-backed</em> ingredients.
+  <section class="ingredients-section">
+    <div class="ingredients-container">
+      <div class="ingredients-header">
+        <h2 class="ingredients-title">
+          A suite of <span class="italic">science-backed</span> ingredients.
         </h2>
-        <a href="/products" class="text-sm font-medium underline-offset-4 hover:underline">Discover all products →</a>
+        <a href="/products" class="ingredients-more-link">Discover all products →</a>
       </div>
-      <div class="mt-14 grid gap-8 md:grid-cols-2">
-        <article class="group overflow-hidden rounded-3xl bg-white ring-1 ring-gray-200 transition-transform hover:-translate-y-1">
-          <div class="aspect-[4/3] overflow-hidden">
-            <img src="./assets/marigold.jpg" alt="Lute-gen®" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
+      <div class="ingredients-grid">
+        <article class="ingredient-card">
+          <div class="card-image-wrapper">
+            <img src="./assets/marigold.jpg" alt="Lute-gen®" loading="lazy" class="card-image">
           </div>
-          <div class="p-8">
-            <h3 class="font-display text-3xl tracking-tight">Lute-gen®</h3>
-            <p class="mt-3 text-gray-600">An award-winning, clinically-researched marigold extract for eye health, cognitive function, and healthy cellular aging.</p>
-            <div class="mt-6 inline-flex items-center text-sm font-medium text-green-600">Know more →</div>
+          <div class="card-content">
+            <h3 class="card-title">Lute-gen®</h3>
+            <p class="card-desc">An award-winning, clinically-researched marigold extract for eye health, cognitive function, and healthy cellular aging.</p>
+            <div class="card-link">Know more →</div>
           </div>
         </article>
-        <article class="group overflow-hidden rounded-3xl bg-white ring-1 ring-gray-200 transition-transform hover:-translate-y-1">
-          <div class="aspect-[4/3] overflow-hidden">
-            <img src="./assets/beetroot.jpg" alt="TruBeet®" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <article class="ingredient-card">
+          <div class="card-image-wrapper">
+            <img src="./assets/beetroot.jpg" alt="TruBeet®" loading="lazy" class="card-image">
           </div>
-          <div class="p-8">
-            <h3 class="font-display text-3xl tracking-tight">TruBeet®</h3>
-            <p class="mt-3 text-gray-600">A natural, clinically-researched solution for an active lifestyle — studies on exercise performance, endurance and cardiovascular health.</p>
-            <div class="mt-6 inline-flex items-center text-sm font-medium text-green-600">Know more →</div>
+          <div class="card-content">
+            <h3 class="card-title">TruBeet®</h3>
+            <p class="card-desc">A natural, clinically-researched solution for an active lifestyle — studies on exercise performance, endurance and cardiovascular health.</p>
+            <div class="card-link">Know more →</div>
           </div>
         </article>
       </div>
@@ -168,170 +152,151 @@
   </section>
 
   <!-- Specialized -->
-  <section class="relative overflow-hidden bg-gray-900 text-white">
-    <div class="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-2 lg:items-center lg:gap-20 lg:px-10 lg:py-32">
-      <div class="aspect-[5/4] overflow-hidden rounded-3xl">
-        <img src="./assets/blackseed.jpg" alt="Black seed oil" loading="lazy" class="h-full w-full object-cover">
+  <section class="specialized-section">
+    <div class="specialized-container">
+      <div class="specialized-image-wrapper">
+        <img src="./assets/blackseed.jpg" alt="Black seed oil" loading="lazy" class="specialized-image">
       </div>
-      <div>
-        <div class="text-xs uppercase tracking-[0.2em] text-green-400">Specialized Products</div>
-        <h2 class="mt-4 font-display text-4xl leading-tight tracking-tight md:text-5xl">
-          Breathing life into your <em>formulations</em>.
+      <div class="specialized-content">
+        <div class="specialized-tagline">Specialized Products</div>
+        <h2 class="specialized-title">
+          Breathing life into your <span class="italic">formulations</span>.
         </h2>
-        <p class="mt-6 text-lg leading-relaxed text-white/70">
+        <p class="specialized-desc">
           Beyond science, we deliver value-added properties through technological innovation — solubility enhancement, bioavailability, stability, and superior organoleptic properties for differentiated formulations.
         </p>
-        <a href="/products" class="mt-10 inline-flex items-center justify-center rounded-full bg-white px-7 py-3.5 text-sm font-medium text-gray-900 hover:bg-green-100 hover:text-gray-900">Discover all products →</a>
+        <a href="/products" class="btn btn-white specialized-btn">Discover all products →</a>
       </div>
     </div>
   </section>
 
   <!-- Media -->
-  <section class="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
-    <div class="flex flex-wrap items-end justify-between gap-6">
+  <section class="media-section">
+    <div class="media-header">
       <div>
-        <div class="text-xs uppercase tracking-[0.2em] text-green-600">Latest Media</div>
-        <h2 class="mt-4 font-display text-4xl tracking-tight md:text-5xl">In the news.</h2>
+        <div class="media-tagline">Latest Media</div>
+        <h2 class="media-title">In the news.</h2>
       </div>
-      <a href="/media" class="text-sm font-medium underline-offset-4 hover:underline">See all →</a>
+      <a href="/media" class="media-more-link">See all →</a>
     </div>
-    <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-      <article class="group flex flex-col">
-        <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-          <img src="./assets/media-eye.jpg" alt="Lute-gen supports eye health in screen users, new study finds" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
+    <div class="media-grid">
+      <article class="media-card">
+        <div class="media-image-wrapper">
+          <img src="./assets/media-eye.jpg" alt="Lute-gen supports eye health in screen users, new study finds" loading="lazy" class="media-image">
         </div>
-        <div class="mt-5 text-[11px] uppercase tracking-[0.18em] text-gray-500">Nutraceutical Business Review</div>
-        <h3 class="mt-2 font-display text-lg leading-snug">Lute-gen supports eye health in screen users, new study finds</h3>
+        <div class="media-publisher">Nutraceutical Business Review</div>
+        <h3 class="media-article-title">Lute-gen supports eye health in screen users, new study finds</h3>
       </article>
-      <article class="group flex flex-col">
-        <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-          <img src="./assets/media-marigold-field.jpg" alt="Bio-gen Extracts obtains product license from Health Canada for marigold extract" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
+      <article class="media-card">
+        <div class="media-image-wrapper">
+          <img src="./assets/media-marigold-field.jpg" alt="Herbo Nutra obtains product license from Health Canada for marigold extract" loading="lazy" class="media-image">
         </div>
-        <div class="mt-5 text-[11px] uppercase tracking-[0.18em] text-gray-500">Nutraceutical Business Review</div>
-        <h3 class="mt-2 font-display text-lg leading-snug">Bio-gen Extracts obtains product license from Health Canada for marigold extract</h3>
+        <div class="media-publisher">Nutraceutical Business Review</div>
+        <h3 class="media-article-title">Herbo Nutra obtains product license from Health Canada for marigold extract</h3>
       </article>
-      <article class="group flex flex-col">
-        <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-          <img src="./assets/media-fenugreek.jpg" alt="Bio-gen Extracts secures US Patent for innovation in weight & blood-sugar management" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
+      <article class="media-card">
+        <div class="media-image-wrapper">
+          <img src="./assets/media-fenugreek.jpg" alt="Herbo Nutra secures US Patent for innovation in weight & blood-sugar management" loading="lazy" class="media-image">
         </div>
-        <div class="mt-5 text-[11px] uppercase tracking-[0.18em] text-gray-500">Nutraceutical Business Review</div>
-        <h3 class="mt-2 font-display text-lg leading-snug">Bio-gen Extracts secures US Patent for innovation in weight & blood-sugar management</h3>
+        <div class="media-publisher">Nutraceutical Business Review</div>
+        <h3 class="media-article-title">Herbo Nutra secures US Patent for innovation in weight & blood-sugar management</h3>
       </article>
-      <article class="group flex flex-col">
-        <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-          <img src="./assets/media-aging.jpg" alt="Carotenoids for longevity & healthy aging" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
+      <article class="media-card">
+        <div class="media-image-wrapper">
+          <img src="./assets/media-aging.jpg" alt="Carotenoids for longevity & healthy aging" loading="lazy" class="media-image">
         </div>
-        <div class="mt-5 text-[11px] uppercase tracking-[0.18em] text-gray-500">Nutraingredients USA</div>
-        <h3 class="mt-2 font-display text-lg leading-snug">Carotenoids for longevity & healthy aging</h3>
+        <div class="media-publisher">Nutraingredients USA</div>
+        <h3 class="media-article-title">Carotenoids for longevity & healthy aging</h3>
       </article>
     </div>
   </section>
 
   <!-- Events -->
-  <section class="bg-gray-50/50 py-24 lg:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-10">
-      <div class="grid gap-12 lg:grid-cols-12 lg:gap-16">
-        <div class="lg:col-span-5">
-          <div class="text-xs uppercase tracking-[0.2em] text-green-600">Events & Exhibitions</div>
-          <h2 class="mt-4 font-display text-4xl tracking-tight md:text-5xl">Meet us at the world's leading nutraceutical events.</h2>
-          <div class="mt-10 aspect-[4/3] overflow-hidden rounded-3xl">
-            <img src="./assets/events.jpg" alt="Bio-gen team at exhibitions" loading="lazy" class="h-full w-full object-cover">
+  <section class="events-section">
+    <div class="events-container">
+      <div class="events-grid">
+        <div class="events-info-column">
+          <div class="events-tagline">Events & Exhibitions</div>
+          <h2 class="events-title">Meet us at the world's leading nutraceutical events.</h2>
+          <div class="events-image-wrapper">
+            <img src="./assets/events.jpg" alt="Herbo Nutra team at exhibitions" loading="lazy" class="events-image">
           </div>
         </div>
-        <div class="lg:col-span-7">
-          <ul class="divide-y divide-gray-200 rounded-3xl bg-white ring-1 ring-gray-200">
-            <li class="grid gap-2 p-6 sm:grid-cols-12 sm:items-center">
-              <div class="font-display text-lg sm:col-span-4">Vitafoods India</div>
-              <div class="text-sm text-gray-600 sm:col-span-2">Booth D04</div>
-              <div class="text-sm text-gray-600 sm:col-span-3">Feb 11–13, 2026</div>
-              <div class="text-sm sm:col-span-3">Mumbai, India</div>
+        <div class="events-list-column">
+          <ul class="events-list">
+            <li class="event-item">
+              <div class="event-name">Vitafoods India</div>
+              <div class="event-booth">Booth D04</div>
+              <div class="event-date">Feb 11–13, 2026</div>
+              <div class="event-location">Mumbai, India</div>
             </li>
-            <li class="grid gap-2 p-6 sm:grid-cols-12 sm:items-center">
-              <div class="font-display text-lg sm:col-span-4">Asia Pharma Expo</div>
-              <div class="text-sm text-gray-600 sm:col-span-2">Booth 2401, Hall 2</div>
-              <div class="text-sm text-gray-600 sm:col-span-3">Mar 29–31, 2026</div>
-              <div class="text-sm sm:col-span-3">Dhaka, Bangladesh</div>
+            <li class="event-item">
+              <div class="event-name">Asia Pharma Expo</div>
+              <div class="event-booth">Booth 2401, Hall 2</div>
+              <div class="event-date">Mar 29–31, 2026</div>
+              <div class="event-location">Dhaka, Bangladesh</div>
             </li>
-            <li class="grid gap-2 p-6 sm:grid-cols-12 sm:items-center">
-              <div class="font-display text-lg sm:col-span-4">Vitafoods Europe</div>
-              <div class="text-sm text-gray-600 sm:col-span-2">Booth 3A48</div>
-              <div class="text-sm text-gray-600 sm:col-span-3">May 5–7, 2026</div>
-              <div class="text-sm sm:col-span-3">Barcelona, Spain</div>
+            <li class="event-item">
+              <div class="event-name">Vitafoods Europe</div>
+              <div class="event-booth">Booth 3A48</div>
+              <div class="event-date">May 5–7, 2026</div>
+              <div class="event-location">Barcelona, Spain</div>
             </li>
-            <li class="grid gap-2 p-6 sm:grid-cols-12 sm:items-center">
-              <div class="font-display text-lg sm:col-span-4">Growth Asia Summit</div>
-              <div class="text-sm text-gray-600 sm:col-span-2">Booth —</div>
-              <div class="text-sm text-gray-600 sm:col-span-3">Jul 8–10, 2026</div>
-              <div class="text-sm sm:col-span-3">Singapore</div>
+            <li class="event-item">
+              <div class="event-name">Growth Asia Summit</div>
+              <div class="event-booth">Booth —</div>
+              <div class="event-date">Jul 8–10, 2026</div>
+              <div class="event-location">Singapore</div>
             </li>
-            <li class="grid gap-2 p-6 sm:grid-cols-12 sm:items-center">
-              <div class="font-display text-lg sm:col-span-4">Hi Korea</div>
-              <div class="text-sm text-gray-600 sm:col-span-2">Booth C39</div>
-              <div class="text-sm text-gray-600 sm:col-span-3">Aug 25–27, 2026</div>
-              <div class="text-sm sm:col-span-3">Seoul, Korea</div>
+            <li class="event-item">
+              <div class="event-name">Hi Korea</div>
+              <div class="event-booth">Booth C39</div>
+              <div class="event-date">Aug 25–27, 2026</div>
+              <div class="event-location">Seoul, Korea</div>
             </li>
-            <li class="grid gap-2 p-6 sm:grid-cols-12 sm:items-center">
-              <div class="font-display text-lg sm:col-span-4">Vitafoods Asia</div>
-              <div class="text-sm text-gray-600 sm:col-span-2">Booth H3-Q25</div>
-              <div class="text-sm text-gray-600 sm:col-span-3">Sep 2–4, 2026</div>
-              <div class="text-sm sm:col-span-3">Bangkok, Thailand</div>
+            <li class="event-item">
+              <div class="event-name">Vitafoods Asia</div>
+              <div class="event-booth">Booth H3-Q25</div>
+              <div class="event-date">Sep 2–4, 2026</div>
+              <div class="event-location">Bangkok, Thailand</div>
             </li>
           </ul>
-          <a href="mailto:sales@bio-gen.in" class="mt-8 inline-flex items-center justify-center rounded-full bg-gray-900 px-7 py-3.5 text-sm font-medium text-white hover:bg-green-600">Enquire about an event →</a>
+          <a href="mailto:sales@herbo-nutra.in" class="btn btn-primary-large events-enquire-btn">Enquire about an event →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white">
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-10">
-      <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-        <div class="lg:col-span-2">
-          <div class="flex items-center gap-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-white">
-              <span class="font-display text-lg font-bold text-gray-900">B</span>
-            </div>
-            <div class="font-display text-xl font-semibold">Bio-gen Extracts</div>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-wrapper">
+            
+            <div class="footer-logo-text">Herbo Nutra Ingredients</div>
           </div>
-          <p class="mt-6 max-w-md text-sm leading-relaxed text-white/70">
-            At Bio-gen Extracts, we believe in a future where health choices are well-informed and well-made. Join us on our mission to empower individuals worldwide to <em class="font-display">Choose Good Health™</em> through award-winning, scientifically-backed nutraceutical ingredients.
+          <p class="footer-brand-desc">
+            At Herbo Nutra, we believe in a future where health choices are well-informed and well-made. Join us on our mission to empower individuals worldwide to <span class="font-display">Choose Good Health™</span> through award-winning, scientifically-backed nutraceutical ingredients.
           </p>
         </div>
         <div>
-          <div class="text-xs uppercase tracking-[0.2em] text-white/50">Explore</div>
-          <ul class="mt-5 space-y-3 text-sm">
-            <li><a href="/products" class="hover:text-green-400">Products</a></li>
-            <li><a href="/company" class="hover:text-green-400">Company</a></li>
-            <li><a href="/media" class="hover:text-green-400">Media</a></li>
-            <li><a href="/contact" class="hover:text-green-400">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="text-xs uppercase tracking-[0.2em] text-white/50">Contact</div>
-          <ul class="mt-5 space-y-3 text-sm text-white/80">
+          <div class="footer-column-title">Contact</div>
+          <ul class="footer-contact-list">
             <li>+91 91089 93618</li>
             <li>+91 91080 58822</li>
-            <li>sales@bio-gen.in</li>
+            <li>sales@herbo-nutra.in</li>
           </ul>
         </div>
       </div>
-      <div class="mt-14 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/50 md:flex-row md:items-center md:justify-between">
-        <div>© 2026 Bio-gen Extracts. All rights reserved.</div>
-        <div class="flex gap-6">
-          <a href="#" class="hover:text-white">Privacy policy</a>
-          <a href="#" class="hover:text-white">Disclaimers</a>
+      <div class="footer-bottom">
+        <div>© <span id="copyright-year">2026</span> Herbo Nutra Ingredients. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link">Privacy policy</a>
+          <a href="#" class="footer-bottom-link">Disclaimers</a>
         </div>
       </div>
     </div>
   </footer>
-
-  <script>
-    // Simple JS for any interactivity, e.g., year update
-    document.addEventListener('DOMContentLoaded', function() {
-      const year = new Date().getFullYear();
-      document.querySelector('footer .text-xs').innerHTML = document.querySelector('footer .text-xs').innerHTML.replace('2026', year);
-    });
-  </script>
 </body>
 </html>
