@@ -24,7 +24,7 @@
         <img src="assets/logo.png" alt="Herbo Nutra Logo" class="logo-image">
         <div class="logo-text">Herbo Nutra Ingredients</div>
       </a>
-      <a href="/contact" class="btn btn-primary">Contact Us</a>
+      <a href="#footer" class="btn btn-primary">Contact Us</a>
     </div>
   </header>
 
@@ -43,8 +43,8 @@
           Herbo Nutra is a value-driven manufacturer of nutraceutical ingredients since 2000 — with innovation at the core of every step in the value chain.
         </p>
         <div class="hero-actions">
-          <a href="/company" class="btn btn-primary btn-large">Learn More</a>
-          <a href="/products" class="btn btn-secondary">Our ingredients →</a>
+          <a href="#about" class="btn btn-primary btn-large">Learn More</a>
+          <a href="#ingredients" class="btn btn-secondary">Our ingredients →</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -74,7 +74,7 @@
   </section>
 
   <!-- About -->
-  <section class="about-section">
+  <section id="about" class="about-section">
     <div class="about-grid">
       <div class="about-header-column">
         <div class="about-tagline">About Herbo Nutra</div>
@@ -118,7 +118,7 @@
   </section>
 
   <!-- Ingredients -->
-  <section class="ingredients-section">
+  <section id="ingredients" class="ingredients-section">
     <div class="ingredients-container">
       <div class="ingredients-header">
         <h2 class="ingredients-title">
@@ -218,8 +218,37 @@
         <div class="events-info-column">
           <div class="events-tagline">Events & Exhibitions</div>
           <h2 class="events-title">Meet us at the world's leading nutraceutical events.</h2>
-          <div class="events-image-wrapper">
-            <img src="./assets/events.jpg" alt="Herbo Nutra team at exhibitions" loading="lazy" class="events-image">
+          <div class="events-carousel">
+            <div class="carousel-track">
+              <div class="carousel-slide active">
+                <img src="./assets/eventpic-1.jpg" alt="Herbo Nutra team at exhibitions - Slide 1" class="carousel-image">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/eventpic-2.jpg" alt="Herbo Nutra team at exhibitions - Slide 2" class="carousel-image">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/eventpic-3.jpg" alt="Herbo Nutra team at exhibitions - Slide 3" class="carousel-image">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/eventpic-4.jpg" alt="Herbo Nutra team at exhibitions - Slide 4" class="carousel-image">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/eventpic-5.jpg" alt="Herbo Nutra team at exhibitions - Slide 5" class="carousel-image">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/eventpic-6.jpeg" alt="Herbo Nutra team at exhibitions - Slide 6" class="carousel-image">
+              </div>
+            </div>
+            <button class="carousel-btn prev-btn" aria-label="Previous Slide">‹</button>
+            <button class="carousel-btn next-btn" aria-label="Next Slide">›</button>
+            <div class="carousel-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
           </div>
         </div>
         <div class="events-list-column">
@@ -261,14 +290,13 @@
               <div class="event-location">Bangkok, Thailand</div>
             </li>
           </ul>
-          <a href="mailto:sales@herbo-nutra.in" class="btn btn-primary-large events-enquire-btn">Enquire about an event →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
+  <footer id="footer" class="site-footer">
     <div class="footer-container">
       <div class="footer-grid">
         <div class="footer-brand">

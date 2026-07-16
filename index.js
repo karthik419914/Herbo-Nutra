@@ -99,6 +99,78 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(aboutSection);
   };
 
+  // Carousel logic for Events & Exhibitions section
+  const initCarousel = () => {
+    const carousel = document.querySelector('.events-carousel');
+    if (!carousel) return;
+
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const dots = carousel.querySelectorAll('.dot');
+    const prevBtn = carousel.querySelector('.prev-btn');
+    const nextBtn = carousel.querySelector('.next-btn');
+
+    if (slides.length === 0) return;
+
+    let currentIndex = 0;
+    let intervalId = null;
+
+    const showSlide = (index) => {
+      // Remove active class from current slide & dot
+      slides[currentIndex].classList.remove('active');
+      if (dots.length > currentIndex) dots[currentIndex].classList.remove('active');
+
+      currentIndex = (index + slides.length) % slides.length;
+
+      // Add active class to new slide & dot
+      slides[currentIndex].classList.add('active');
+      if (dots.length > currentIndex) dots[currentIndex].classList.add('active');
+    };
+
+    const nextSlide = () => showSlide(currentIndex + 1);
+    const prevSlide = () => showSlide(currentIndex - 1);
+
+    const startAutoPlay = () => {
+      stopAutoPlay();
+      intervalId = setInterval(nextSlide, 2500); // Cross-fade every 3.5 seconds
+    };
+
+    const stopAutoPlay = () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+      }
+    };
+
+    // Event listeners
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        startAutoPlay(); // Restart timer
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        startAutoPlay(); // Restart timer
+      });
+    }
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => {
+        showSlide(idx);
+        startAutoPlay(); // Restart timer
+      });
+    });
+
+    startAutoPlay();
+
+    // Pause on hover
+    carousel.addEventListener('mouseenter', stopAutoPlay);
+    carousel.addEventListener('mouseleave', startAutoPlay);
+  };
+
   initStatsObserver();
   initAboutTypingObserver();
+  initCarousel();
 });
